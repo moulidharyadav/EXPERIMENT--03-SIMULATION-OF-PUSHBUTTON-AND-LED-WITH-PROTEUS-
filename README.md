@@ -1,13 +1,11 @@
-# EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED INTERFACE WITH ARM CONTROLLER AND PROTEUS 
-```
-Name: Moulidhar
-Register Number: 212223240042
-```
+# EXPERIMENT 03 SIMULATION OF PUSHBUTTON AND LED INTERFACE WITH ARM CONTROLLER AND PROTEUS 
+### NAME : G.MOULIDHAR
+### REG NO : 212223240042
+### DATE : 23.04.2025
 ## Aim: 
-   To Interface a Digital output (LED) and Digital input (Pushbutton) to ARM development board , and simulate it in Proteus 
-## Components required:
-   STM32 CUBE IDE, 
-   Proteus 8 simulator .
+To Interface a Digital output (LED) and Digital input (Pushbutton) to ARM development board , and simulate it in Proteus 
+## Components required: 
+STM32 CUBE IDE, Proteus 8 simulator .
 ## Theory 
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
@@ -100,15 +98,15 @@ int main(void)
 
 void push_button()
 {
-button_status=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_13);
-if (button_status==0)
-{
-HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET);
-}
-else
-{
-HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
-}
+	button_status=HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13);
+	if(button_status==0)
+	{
+		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET);
+	}
+	else
+	{
+		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
+	}
 }
 
 void SystemClock_Config(void)
@@ -168,15 +166,12 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif
 ```
 ## Output screen shots of proteus  :
+![Screenshot 2025-03-18 113844](https://github.com/user-attachments/assets/ebe5a790-d236-4c85-b6c3-0fd48bf5388f)
 
-![image](https://github.com/user-attachments/assets/68412047-5ebc-4928-b886-2a8f3af17a07)
-
-![image](https://github.com/user-attachments/assets/18fbf0df-9fce-42f3-871b-2a603b42b5da)
-
+![Screenshot 2025-03-18 113855](https://github.com/user-attachments/assets/a7725616-1cb7-466d-acbd-d315c8d27d40)
 
 ## Proteus layout(Add pdf screen shot of circuit here)
-![image](https://github.com/user-attachments/assets/5b2d92e2-80c5-46a8-a703-f74046104a2f)
-
+ ![Screenshot 2025-03-18 132851](https://github.com/user-attachments/assets/4750771d-558c-41ac-a025-0c028e19b5af)
  
 ## Result :
 Interfacing a digital output and digital input  with ARM microcontroller are simulated in proteus and the results are verified.
